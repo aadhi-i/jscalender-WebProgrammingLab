@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url("./bg.gif");
+    margin: 0;
+}
+
+.calendar {
+    background: rgb(42, 41, 41);
+    opacity: 85%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+input{
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+th {
+    background: #4c4a4a;
+}
+
+td {
+    transition: background 0.2s;
+}
+
+td:hover {
+    background: #e0e0e0;
+    color: black;
+}
+
+td.today {
+    background: #0c00f2;
+    font-weight: bold;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+.sunday{
+    color: red;
+}

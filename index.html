@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <label for="yearInput">Year: </label>
+            <input type="number" id="yearInput" min="1900" max="2100" value="">
+            <label for="monthInput">Month: </label>
+            <input type="number" id="monthInput" min="1" max="12" value="">
+            <button id="goButton">Go</button>
+        </div>
+        <div class="header">
+            <button id="prevMonth">&lt;</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">&gt;</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th style="color: red;">Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody">
+                <!-- Calendar dates will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
